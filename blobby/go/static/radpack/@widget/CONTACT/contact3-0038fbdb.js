@@ -1,0 +1,2 @@
+define("@widget/CONTACT/contact3-0038fbdb.js",["exports","~/c/mutator","~/c/contact3"],(function(t,e,o){"use strict";var c=(global.Core||guac["@wsb/guac-widget-core"]).Maniless.connect(o.C,e._);t.Component=c,t.component="@widget/CONTACT/contact3",t.default=c,t.hooks="@widget/CONTACT/hooks",t.id="contact3",t.src="/home/jenkins/workspace/gdcorp-im/guac-widget-contact/build-master/src/layouts/contact3/index.js",t.type="CONTACT",Object.defineProperty(t,"__esModule",{value:!0})})),"undefined"!=typeof window&&(window.global=window);
+//# sourceMappingURL=contact3-0038fbdb.js.map

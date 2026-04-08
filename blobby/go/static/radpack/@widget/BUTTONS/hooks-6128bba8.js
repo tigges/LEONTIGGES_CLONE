@@ -1,0 +1,2 @@
+define("@widget/BUTTONS/hooks-6128bba8.js",["exports"],(function(t){"use strict";function e(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};return t&&t.data?n(t):t}function n(t){let{data:{buttons:e}}=t;return Array.isArray(e)&&(e=e.filter((t=>null!==t)),t.data.buttons=e),t}t.afterRead=e,t.beforeWrite=function(t){return e(t)},t.cleanNullButton=n,Object.defineProperty(t,"__esModule",{value:!0})})),"undefined"!=typeof window&&(window.global=window);
+//# sourceMappingURL=hooks-6128bba8.js.map

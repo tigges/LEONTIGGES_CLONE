@@ -1,0 +1,2 @@
+define("@widget/JOB_POSTING/hooks-85f0d1ed.js",["exports"],(function(e){"use strict";function t(e){const{formFields:t}=e.data||{};return t&&(e.data.formFields=Array.isArray(t)?t.filter(Boolean):[]),e}e.afterRead=t,e.beforeWrite=function(e){return t(e)},e.email=function(e){const{id:t,type:i,pageId:o,properties:r={}}=e,{formEmail:n}=r;return{id:t,type:i,pageId:o,...n?{email:n}:{}}},Object.defineProperty(e,"__esModule",{value:!0})})),"undefined"!=typeof window&&(window.global=window);
+//# sourceMappingURL=hooks-85f0d1ed.js.map

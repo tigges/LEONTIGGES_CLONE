@@ -1,0 +1,2 @@
+define("@widget/SHOP/c/bs-ErrorMessage-2db860a1.js",["exports"],(function(e){"use strict";const t=e=>{let{message:t}=e;return t?(global.React||guac.react).createElement((global.Core||guac["@wsb/guac-widget-core"]).UX2.Element.Text,{children:t,style:{textAlign:"center"}}):null};t.propTypes={message:(global.PropTypes||guac["prop-types"]).string},e.default=t})),"undefined"!=typeof window&&(window.global=window);
+//# sourceMappingURL=bs-ErrorMessage-2db860a1.js.map
