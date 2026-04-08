@@ -1,0 +1,2 @@
+define("@widget/SHOP_PRODUCT_GROUP/hooks-50fbbe5d.js",["exports","~/c/imageCropOptions"],(function(e,o){"use strict";const{SHRINK_TO_FIT:t,EXPAND_TO_FILL:i}=o.i;e.afterRead=function(e){return e&&e.data?e=function(e){const{imageCropMethod:o}=e.properties;return"shrink_to_fit"===o?e.properties.imageCropMethod=t:"expand_to_fill"===o&&(e.properties.imageCropMethod=i),e}(e):e},Object.defineProperty(e,"__esModule",{value:!0})})),"undefined"!=typeof window&&(window.global=window);
+//# sourceMappingURL=hooks-50fbbe5d.js.map

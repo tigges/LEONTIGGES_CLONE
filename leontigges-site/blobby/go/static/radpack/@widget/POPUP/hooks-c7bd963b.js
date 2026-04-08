@@ -1,0 +1,2 @@
+define("@widget/POPUP/hooks-c7bd963b.js",["exports"],(function(e){"use strict";e.afterRead=function(e){return e&&e.data?(e.data.popupImage||(e.data.popupImage={image:"",alt:"",editedAspectRatio:"",height:"",left:"",position:"",rotation:"",shrinkFit:!1,top:"",video:"",width:""}),e):e},Object.defineProperty(e,"__esModule",{value:!0})})),"undefined"!=typeof window&&(window.global=window);
+//# sourceMappingURL=hooks-c7bd963b.js.map

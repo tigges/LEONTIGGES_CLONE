@@ -1,0 +1,2 @@
+define("@widget/SHOP/bs-shop2-ShopContainer-8700691a.js",["exports","~/c/bs-OlsShopContainer"],(function(e,o){"use strict";e.default=e=>(global.React||guac.react).createElement(o.O,o._({},e,{productListComponent:"ProductList2",placeholderListComponent:"PlaceholderProductList2"})),Object.defineProperty(e,"__esModule",{value:!0})})),"undefined"!=typeof window&&(window.global=window);
+//# sourceMappingURL=bs-shop2-ShopContainer-8700691a.js.map
