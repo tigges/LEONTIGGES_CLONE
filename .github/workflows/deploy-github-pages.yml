@@ -9,6 +9,7 @@ on:
     branches: [main]
     paths:
       - 'leontigges-site/**'
+      - 'index.html'
       - '.github/workflows/deploy-github-pages.yml'
 
 permissions:
