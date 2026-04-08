@@ -1,7 +1,6 @@
-# Serves the static mirror at the repository's GitHub Pages URL, e.g.
-# https://<user>.github.io/LEONTIGGES_CLONE/
-#
-# Enable: Repository Settings → Pages → Build and deployment → Source: GitHub Actions.
+# Publishes leontigges-site/ to the gh-pages branch. In the repo:
+# Settings → Pages → Build and deployment → Source: Deploy from a branch
+# Branch: gh-pages, folder: / (root)
 
 name: Deploy static site to GitHub Pages
 
@@ -13,13 +12,11 @@ on:
       - '.github/workflows/deploy-github-pages.yml'
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: github-pages
-  cancel-in-progress: false
+  group: github-pages-gh-pages-branch
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -27,11 +24,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/configure-pages@v5
-
-      - uses: actions/upload-pages-artifact@v3
+      - name: Publish to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: leontigges-site
-
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./leontigges-site
+          force_orphan: true
