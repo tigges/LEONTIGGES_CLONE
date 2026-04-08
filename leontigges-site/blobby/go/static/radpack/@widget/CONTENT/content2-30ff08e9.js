@@ -1,0 +1,2 @@
+define("@widget/CONTENT/content2-30ff08e9.js",["exports","~/c/Mutator2"],(function(e,o){"use strict";var t=(global.Core||guac["@wsb/guac-widget-core"]).Maniless.connect(o.C,o.M);e.Component=t,e.component="@widget/CONTENT/content2",e.default=t,e.hooks="@widget/CONTENT/hooks",e.id="content2",e.src="/home/jenkins/workspace/gdcorp-im/guac-widget-content/build-master/src/layouts/content2/index.js",e.type="CONTENT",Object.defineProperty(e,"__esModule",{value:!0})})),"undefined"!=typeof window&&(window.global=window);
+//# sourceMappingURL=content2-30ff08e9.js.map

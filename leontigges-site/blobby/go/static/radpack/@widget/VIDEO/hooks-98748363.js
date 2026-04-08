@@ -1,0 +1,2 @@
+define("@widget/VIDEO/hooks-98748363.js",["exports","~/c/defaultProps"],(function(e,d){"use strict";e.afterRead=function(e){return e&&e.data?(e.data.videoControl||(e.data.videoControl={...d.v,videoEmbed:e.data.videoUrl}),Array.isArray(e.data.cards)&&(e.data.cards=e.data.cards.filter((global._||guac.lodash).isPlainObject).map((e=>(e.videoControl||(e.videoControl={...d.v,videoEmbed:e.videoProperties||d.v.videoEmbed}),e)))),e):e},Object.defineProperty(e,"__esModule",{value:!0})})),"undefined"!=typeof window&&(window.global=window);
+//# sourceMappingURL=hooks-98748363.js.map

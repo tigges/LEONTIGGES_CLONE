@@ -1,0 +1,2 @@
+define("@widget/INTRODUCTION/hooks-1b7ef5a4.js",["exports","~/c/defaultProps"],(function(e,o){"use strict";e.afterRead=function(e){return e&&e.data?(e.properties&&!e.properties.mediaType&&(e.properties.mediaType=o.I),e.data.videoControl||(e.data.videoControl={...o.v,videoEmbed:e.data.video||o.v.videoEmbed}),e):e},Object.defineProperty(e,"__esModule",{value:!0})})),"undefined"!=typeof window&&(window.global=window);
+//# sourceMappingURL=hooks-1b7ef5a4.js.map

@@ -1,0 +1,2 @@
+define("@widget/FAQ/hooks-f24166cf.js",["exports"],(function(e){"use strict";function t(e){return e&&(global._||guac.lodash).isPlainObject(e.data)?(e?.data?.items?.length&&(e.data.items=e.data.items.filter(Boolean)),e):e}e.afterRead=function(e={}){return t(e)},e.beforeWrite=function(e={}){return t(e)},Object.defineProperty(e,"__esModule",{value:!0})})),"undefined"!=typeof window&&(window.global=window);
+//# sourceMappingURL=hooks-f24166cf.js.map
