@@ -1,0 +1,40 @@
+# Serves the static mirror at the repository's GitHub Pages URL, e.g.
+# https://<user>.github.io/LEONTIGGES_CLONE/
+#
+# Enable: Repository Settings → Pages → Build and deployment → Source: GitHub Actions.
+
+name: Deploy static site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'leontigges-site/**'
+      - '.github/workflows/deploy-github-pages.yml'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: leontigges-site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
